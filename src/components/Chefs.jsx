@@ -14,7 +14,7 @@ const Chefs = () => {
         
         <div className="text-center group transition-transform duration-300 hover:scale-105">
           <img
-            src="/IMAGES/bg10.jpg"
+            src="/images/bg10.jpg"
             alt="Chef 1"
             className="w-72 md:w-80 h-80 md:h-110 object-cover rounded-lg mb-4 shadow-lg"
           />
@@ -25,7 +25,7 @@ const Chefs = () => {
        
         <div className="text-center group transition-transform duration-300 hover:scale-105">
           <img
-            src="/IMAGES/bg12.jpg"
+            src="/images/bg12.jpg"
             alt="Chef 2"
             className="w-72 md:w-80 h-80 md:h-110 object-cover rounded-lg mb-4 shadow-lg"
           />
@@ -36,7 +36,7 @@ const Chefs = () => {
         
         <div className="text-center group transition-transform duration-300 hover:scale-105">
           <img
-            src="/IMAGES/bg11.jpg"
+            src="/images/bg11.jpg"
             alt="Chef 3"
             className="w-72 md:w-80 h-80 md:h-110 object-cover rounded-lg mb-4 shadow-lg"
           />
