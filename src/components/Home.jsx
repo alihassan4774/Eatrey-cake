@@ -6,7 +6,8 @@ const Home = () => {
       className="h-[700px] bg-cover bg-left md:bg-center text-white flex flex-col justify-center pl-6 md:pl-28 text-center md:text-left"
       style={{ backgroundImage: "url('/IMAGES/bg4.jpg.jpg')" }}
     >
-      <h3 className="text-xs md:text-sm font-extrabold mb-2">
+      <div className="flex flex-col md:mb-5 md:ml-35 ">
+        <h3 className="text-xs md:text-sm font-extrabold mb-2">
         NEW RESTAURANT IN TOWN
       </h3>
       <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-snug">
@@ -25,6 +26,7 @@ const Home = () => {
         >
           Reservation
         </button>
+      </div>
       </div>
     </section>
   );

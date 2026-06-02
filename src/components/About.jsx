@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-center mt-16 md:mt-24 px-4 sm:px-8 md:px-28 gap-6 md:gap-8 text-center md:text-left">
-      {/* Text Section */}
+      
       <div className="md:w-1/2">
         <h3 className="text-gray-500 text-xs sm:text-sm mb-2">
           READ OUR STORY
@@ -25,12 +25,12 @@ const About = () => {
         </p>
       </div>
 
-      {/* Image Section */}
+      
       <div className="md:w-1/2">
         <img
           src="IMAGES/bg2.jpg"
           alt="About"
-          className="w-full h-auto rounded shadow-md"
+          className="w-full h-auto rounded"
         />
       </div>
     </section>
