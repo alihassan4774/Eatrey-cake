@@ -67,7 +67,7 @@ const Contact = () => {
   return (
     <section className="mt-24 flex flex-col md:flex-row px-8 md:px-28 gap-8">
       <img
-        src="/IMAGES/bg1.jpg"
+        src="/images/bg1.jpg"
         alt="Contact"
         className="w-full md:w-1/2 object-cover rounded-lg brightness-150 shadow-lg"
       />

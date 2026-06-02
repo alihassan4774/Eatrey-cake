@@ -28,7 +28,7 @@ const About = () => {
       
       <div className="md:w-1/2">
         <img
-          src="IMAGES/bg2.jpg"
+          src="images/bg2.jpg"
           alt="About"
           className="w-full h-auto rounded"
         />
