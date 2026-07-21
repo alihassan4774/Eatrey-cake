@@ -27,14 +27,14 @@ const Navbar = () => {
             : "bg-transparent text-white"
         }`}
       >
-        {/* Logo */}
+       
         <div className="text-2xl font-bold">
           Eatery{" "}
           <span className={scrolled ? "text-red-600" : "text-red-400"}>.</span>{" "}
           Cafe
         </div>
 
-        {/* Desktop Menu */}
+        
         <nav
           className={`hidden md:flex gap-8 ${
             scrolled ? "font-normal" : "font-bold"
@@ -42,6 +42,9 @@ const Navbar = () => {
         >
           <Link to="home" smooth duration={500} className="cursor-pointer hover:text-red-500">
             Home
+          </Link>
+          <Link to="feature" smooth duration={500} className="cursor-pointer hover:text-red-500">
+            Feature
           </Link>
           <Link to="about" smooth duration={500} className="cursor-pointer hover:text-red-500">
             About
@@ -60,7 +63,7 @@ const Navbar = () => {
           </Link>
         </nav>
 
-        {/* Desktop Right Side */}
+      
         <div className="hidden md:flex items-center gap-4">
           <div
             className={`text-sm cursor-pointer hover:text-red-500 ${
@@ -86,7 +89,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Hamburger */}
+        
         <div className="md:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? "✖" : "☰"}
@@ -94,13 +97,16 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+     
       {menuOpen && (
         <div
           className={`fixed top-0 left-0 w-full h-full bg-white text-black flex flex-col items-center justify-center gap-8 z-40`}
         >
           <Link to="home" smooth duration={500} onClick={() => setMenuOpen(false)} className="text-lg cursor-pointer hover:text-red-500">
             Home
+          </Link>
+          <Link to="feature" smooth duration={500} onClick={() => setMenuOpen(false)} className="text-lg cursor-pointer hover:text-red-500">
+            Feature
           </Link>
           <Link to="about" smooth duration={500} onClick={() => setMenuOpen(false)} className="text-lg cursor-pointer hover:text-red-500">
             About

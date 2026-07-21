@@ -7,6 +7,7 @@ import Menu from "./components/Menu";
 import Testimonials from "./components/testimonial";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import FeatureSection from "./components/FeatureSection"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       
       <div id="home"><Home /></div>
+      <div id="featuresection"><FeatureSection /></div>
       <div id="about"><About /></div>
       <div id="chefs"><Chefs /></div>
       <div id="menu"><Menu /></div>

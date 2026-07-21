@@ -20,12 +20,19 @@ const Contact = () => {
     return newErrors;
   };
 
-  const noChage = (e) => {
+  const onChangeHandler = (e) => {
     const { name, value } = e.target;
     setErrors((prev) => {
       const newErrors = { ...prev };
       if (value.trim() !== "") {
         delete newErrors[name];
+        if (name === "email") {
+          if (!/^[^\s@]+@gmail\.com$/.test(value)) {
+            newErrors.email = "Invalid Email";
+          } else {
+            delete newErrors.email;
+          }
+        }
       }
       return newErrors;
     });
@@ -60,7 +67,7 @@ const Contact = () => {
         },
         (error) => {
           alert("❌ Failed to send email: " + error.text);
-        }
+        },
       );
   };
 
@@ -86,10 +93,10 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
-                onChange={noChage}
+                onChange={onChangeHandler}
                 placeholder="Full name"
                 className={
-                  errors.message
+                  errors.name
                     ? "border focus:outline-none border-red-500 px-2 py-2 w-full rounded-lg"
                     : "w-full border rounded-lg border-gray-300 py-2  px-2 focus:outline-none focus:border-red-300 transition duration-300"
                 }
@@ -103,10 +110,10 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
-                onChange={noChage}
+                onChange={onChangeHandler}
                 placeholder="Email"
                 className={
-                  errors.message
+                  errors.email
                     ? "border focus:outline-none border-red-500 px-2 py-2 w-full rounded-lg"
                     : "w-full border rounded-lg border-gray-300 py-2  px-2 focus:outline-none focus:border-red-300 transition duration-300"
                 }
@@ -122,10 +129,10 @@ const Contact = () => {
             <input
               type="text"
               name="subject"
-              onChange={noChage}
+              onChange={onChangeHandler}
               placeholder="Subject"
               className={
-                errors.message
+                errors.subject
                   ? "border focus:outline-none border-red-500 px-2 py-2 w-full rounded-lg"
                   : "w-full border rounded-lg border-gray-300 py-2  px-2 focus:outline-none focus:border-red-300 transition duration-300"
               }
@@ -139,7 +146,7 @@ const Contact = () => {
           <div>
             <textarea
               name="message"
-              onChange={noChage}
+              onChange={onChangeHandler}
               placeholder="Tell us about your project"
               rows={4}
               className={
@@ -159,7 +166,7 @@ const Contact = () => {
               type="submit"
               className="bg-red-500  text-white font-semibold py-2 px-6 rounded-md hover:bg-red-600 shadow-md transition duration-300"
             >
-              Send Message
+              Submit
             </button>
           </div>
         </form>

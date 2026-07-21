@@ -6,7 +6,7 @@ const Home = () => {
       className="h-[700px] bg-cover bg-left md:bg-center text-white flex flex-col justify-center pl-6 md:pl-28 text-center md:text-left"
       style={{ backgroundImage: "url('/images/bg4.jpg.jpg')" }}
     >
-      <div className="flex flex-col md:mb-5 md:ml-35 ">
+      <div className="flex flex-col md:mb-12 md:ml-30 ">
         <h3 className="text-xs md:text-sm font-extrabold mb-2">
         NEW RESTAURANT IN TOWN
       </h3>
