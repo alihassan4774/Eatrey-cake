@@ -72,11 +72,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="mt-24 flex flex-col md:flex-row px-8 md:px-28 gap-8">
+    <section className="mt-24 flex flex-col md:flex-row px-8 md:px-24 gap-16">
       <img
-        src="/images/bg1.jpg"
+        src="/images/contact.png"
         alt="Contact"
-        className="w-full md:w-1/2 object-cover rounded-lg brightness-150 shadow-lg"
+        className="w-full  md:w-[55%] md:h-auto  object-cover rounded-lg brightness-150 "
       />
 
       <div className="md:w-1/2 flex flex-col gap-4 mt-8">
@@ -87,7 +87,6 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className="flex flex-col gap-6"
         >
-          {/* Name & Email */}
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1">
               <input
@@ -124,7 +123,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Subject */}
           <div>
             <input
               type="text"
@@ -142,7 +140,6 @@ const Contact = () => {
             )}
           </div>
 
-          {/* Message */}
           <div>
             <textarea
               name="message"
@@ -160,7 +157,6 @@ const Contact = () => {
             )}
           </div>
 
-          {/* Submit Button */}
           <div className="flex justify-end">
             <button
               type="submit"

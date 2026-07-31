@@ -1,8 +1,4 @@
-import {
-  FiCoffee,
-  FiHeart,
-  FiTag,
-} from "react-icons/fi";
+import { FiCoffee, FiHeart, FiTag } from "react-icons/fi";
 
 import { LuChefHat } from "react-icons/lu";
 
@@ -29,17 +25,14 @@ const features = [
   },
 ];
 
-export default function WhyChooseUs() {
+export default function FeatureSection() {
   return (
     <section className="bg-[#0a0a0a] border-b border-gray-300">
       <div className="max-w-7xl mx-auto md:ml-40 px-4 ml-4 py-26">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((item, index) => (
-            <div
-              key={index}
-              className=" flex flex-col group"
-            >
-              <div className="text-red-500 text-4xl mb-4 transition-all duration-300 group-hover:scale-110">
+            <div key={index} className=" flex flex-col ">
+              <div className="text-red-500 text-4xl mb-4 font-bold  ">
                 {item.icon}
               </div>
 

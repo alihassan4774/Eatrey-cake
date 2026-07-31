@@ -12,12 +12,12 @@ const Menu = () => {
       {/* Menu Images Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {[
-          "/images/darag fd.jpg",
-          "/images/darag fd1.jpg",
-          "/images/darag fd2.jpg",
-          "/images/darag fd3.jpg",
-          "/images/darag fd4.jpg",
-          "/images/darag fd5.jpg",
+          "/images/Menu1.jpg",
+          "/images/Menu2.jpg",
+          "/images/Menu3.jpg",
+          "/images/Menu4.jpg",
+          "/images/Menu5.jpg",
+          "/images/Menu6.jpg",
         ].map((src, index) => (
           <div
             key={index}
