@@ -3,13 +3,11 @@ import React from "react";
 const Menu = () => {
   return (
     <section className="mt-24">
-      {/* Section Heading */}
       <div className="text-center mb-12 px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-2">Our Menus</h2>
         <h4 className="text-gray-400 text-xs">TEA TIME & DINING</h4>
       </div>
-
-      {/* Menu Images Grid */}
+        
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {[
           "/images/Menu1.jpg",
@@ -19,10 +17,7 @@ const Menu = () => {
           "/images/Menu5.jpg",
           "/images/Menu6.jpg",
         ].map((src, index) => (
-          <div
-            key={index}
-            className="overflow-hidden group"
-          >
+          <div key={index} className="overflow-hidden group">
             <img
               src={src}
               alt={`Menu ${index + 1}`}
