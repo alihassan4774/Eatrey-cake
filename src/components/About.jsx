@@ -11,7 +11,7 @@ const About = () => {
           </h3>
         </div>
 
-        <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight mb-5">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-5">
           <div>We've been Making The</div>
           <div>
             Delicious Foods Since <span className="text-red-600">1999</span>
